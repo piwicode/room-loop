@@ -235,7 +235,7 @@ if (do_die) {
 }
 
 // Create a trail for debugging the cinematic.
-if(true) {
+if(false) {
   var point = instance_create(x, y, obj_dot);
   if(jump_held_ctrl) {
     point.image_blend = c_red

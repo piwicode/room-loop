@@ -11,10 +11,6 @@ var object = obj_collision_16x16
 object_set_visible(object, false);
 var xx = 0;
 
-// Select the right tile set accroding to the room.
-var bg1 = bg_auto_cave_tile;
-var bg2 = bg_auto_cave_tile2;
-
 for(var xx = 0; xx < room_width ; xx += tile_size) {
   for(var yy = 0; yy < room_height ; yy += tile_size) {
     var xxx = xx + tile_size * .5;
@@ -24,9 +20,8 @@ for(var xx = 0; xx < room_width ; xx += tile_size) {
       var r = collision_point(xxx + tile_size, yyy, object, false, true) == noone;
       var l = collision_point(xxx - tile_size, yyy, object, false, true) == noone;
       var b = collision_point(xxx, yyy + tile_size, object, false, true) == noone;
-      random_set_seed(yy * room_width + xx)
-      var tileset = choose(bg1, bg1, bg2)
-      tile_add(tileset,
+
+      tile_add(bg_auto_tile,
                tile_padding + (t + 2 * r) * (tile_size + tile_padding * 2),
                tile_padding + (b + 2 * l) * (tile_size + tile_padding * 2),
                tile_size, tile_size, xx, yy, tile_depth);
