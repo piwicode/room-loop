@@ -4,9 +4,9 @@
 math_set_epsilon(0)
   
 // Game resolution parameters, and image scaling factor.
-global.game_res_height = 200;
-global.game_res_width = 320;
-global.game_res_scale = 4;
+global.game_res_height = 768;
+global.game_res_width = 768;
+global.game_res_scale = 1;
 
 // Capture the monitor resolution for scaling.
 global.monitor_width = display_get_width();

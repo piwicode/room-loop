@@ -3,7 +3,7 @@
   <spriteName>sp_exit_door</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>390</depth>
+  <depth>500</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -43,7 +43,7 @@
             <kind>1</kind>
             <string>if (abs(other.x - x) &lt; 5 &amp;&amp; abs(other.y - y) &lt; 15) {
   // The mage is in front of the door.
-  with(other) {instance_destroy()}
+  with(other) { instance_destroy() }
   alarm[0] = room_speed * 1; // Wait a second efore switching level.
 }
 </string>
