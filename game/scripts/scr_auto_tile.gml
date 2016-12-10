@@ -1,6 +1,6 @@
 // scr_auto_tile()
 // Make sure the generated level is stable.
-random_set_seed(room);
+
 
 var tile_size = 8
 var tile_padding = 1
@@ -24,6 +24,7 @@ for(var xx = 0; xx < room_width ; xx += tile_size) {
       var r = collision_point(xxx + tile_size, yyy, object, false, true) == noone;
       var l = collision_point(xxx - tile_size, yyy, object, false, true) == noone;
       var b = collision_point(xxx, yyy + tile_size, object, false, true) == noone;
+      random_set_seed(yy * room_width + xx)
       var tileset = choose(bg1, bg1, bg2)
       tile_add(tileset,
                tile_padding + (t + 2 * r) * (tile_size + tile_padding * 2),

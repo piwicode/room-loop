@@ -86,6 +86,7 @@
       <sprite>sprites\sp_blob_walk</sprite>
       <sprite>sprites\sp_blob_wait</sprite>
       <sprite>sprites\sp_blob_jump</sprite>
+      <sprite>sprites\sp_blob_wall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -125,8 +126,8 @@
     <font>fonts\fnt_arial</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_collision_16x16</object>
     <object>objects\obj_collision_32x32</object>
+    <object>objects\obj_collision_16x16</object>
     <object>objects\obj_collision_16x16_notile</object>
     <object>objects\obj_exit_door</object>
     <object>objects\obj_plate_open</object>
@@ -225,10 +226,13 @@
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_lvl_00</room>
-    <room>rooms\rm_lvl_01</room>
-    <room>rooms\rm_lvl_02</room>
-    <room>rooms\room47</room>
-    <room>rooms\room46</room>
+    <room>rooms\room6</room>
+    <room>rooms\room7</room>
+    <room>rooms\room11</room>
+    <room>rooms\room12</room>
+    <room>rooms\room13</room>
+    <room>rooms\room14</room>
+    <room>rooms\room_the_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

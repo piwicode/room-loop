@@ -8,7 +8,7 @@ xx = x; yy = y;
 x_colide = false; y_colide = false;
 
 // Acceleration: gravity is a vertical acceleration toward the bottom.
-yss = 0.8;
+yss = 0.7;
 
 // Maximum absolute value of the horizontal and vertical speed.
 max_speed = 30;
