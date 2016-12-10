@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>scr_auto_tile()
+background_colour = make_colour_rgb(60*.3,45*.3,66*.3)
 </string>
           </argument>
         </arguments>

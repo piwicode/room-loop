@@ -40,7 +40,7 @@ if (file_exists(client_id_file_name)) {
   show_debug_message("Analytics: Generate and persist client id " + client_id);
 }
 
-tracking_id = "UA-86788013-2";
+tracking_id = "UA-86788013-3";
 collect_url = "https://www.google-analytics.com/collect";
 // Capture the start time for the very first room displayed.
 from_time = get_timer();

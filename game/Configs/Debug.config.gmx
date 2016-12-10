@@ -654,7 +654,7 @@
   </Options>
   <ConfigConstants>
     <constants number="2">
-      <constant name="START_ROOM">rm_lvl_00</constant>
+      <constant name="START_ROOM">room01</constant>
       <constant name="DEBUG_CONFIG">1</constant>
     </constants>
   </ConfigConstants>

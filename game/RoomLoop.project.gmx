@@ -3,7 +3,6 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
     <Config>Configs\Debug</Config>
-    <Config>Configs\DebugRoom</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
@@ -77,6 +76,8 @@
       <sprite>sprites\spr_graphics</sprite>
       <sprite>sprites\spr_credit_thanks</sprite>
       <sprite>sprites\sp_feedback</sprite>
+      <sprite>sprites\sp_from_paris</sprite>
+      <sprite>sprites\sp_sign</sprite>
     </sprites>
     <sprite>sprites\sp_star</sprite>
     <sprite>sprites\sp_no_power</sprite>
@@ -88,6 +89,8 @@
       <sprite>sprites\sp_blob_jump</sprite>
       <sprite>sprites\sp_blob_wall</sprite>
     </sprites>
+    <sprite>sprites\sprite58</sprite>
+    <sprite>sprites\sp_spikes</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_auto_cave_tile</background>
@@ -127,6 +130,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_collision_32x32</object>
+    <object>objects\obj_spikes</object>
     <object>objects\obj_collision_16x16</object>
     <object>objects\obj_collision_16x16_notile</object>
     <object>objects\obj_exit_door</object>
@@ -181,9 +185,6 @@
       <object>objects\browse_and_leave</object>
       <object>objects\obj_unit_test</object>
     </objects>
-    <object>objects\obj_ice_staff</object>
-    <object>objects\obj_wind_staff</object>
-    <object>objects\obj_fire_staff</object>
     <objects name="sound">
       <object>objects\obj_sound_bg</object>
     </objects>
@@ -198,7 +199,7 @@
       <object>objects\obj_frozen_content</object>
       <object>objects\obj_dot</object>
       <object>objects\obj_gui_dialog</object>
-      <object>objects\obj_gui_go_next_level</object>
+      <object>objects\obj_fade_out_and_restart</object>
       <object>objects\obj_test_collider</object>
     </objects>
     <objects name="dialog">
@@ -218,21 +219,29 @@
       <object>objects\boj_feedback</object>
       <object>objects\obj_par_credit</object>
       <object>objects\obj_game_over</object>
+      <object>objects\obj_sign</object>
+      <object>objects\obj_from_paris</object>
     </objects>
     <object>objects\obj_star</object>
     <object>objects\obj_run_statistics</object>
     <object>objects\obj_google_analytics</object>
+    <object>objects\obj_exit_game</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_lvl_00</room>
-    <room>rooms\room6</room>
-    <room>rooms\room7</room>
+    <room>rooms\room01</room>
+    <room>rooms\room02</room>
+    <room>rooms\room03</room>
+    <room>rooms\room04</room>
+    <room>rooms\room05</room>
+    <room>rooms\room06</room>
+    <room>rooms\room07</room>
+    <room>rooms\room08</room>
+    <room>rooms\room09</room>
+    <room>rooms\room10</room>
     <room>rooms\room11</room>
-    <room>rooms\room12</room>
-    <room>rooms\room13</room>
-    <room>rooms\room14</room>
     <room>rooms\room_the_end</room>
+    <room>rooms\restart</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
