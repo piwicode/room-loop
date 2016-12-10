@@ -20,7 +20,7 @@
     <option_android_build_version>0</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
     <option_android_compile_sdk_version>23</option_android_compile_sdk_version>
-    <option_android_display_name>MageGlace</option_android_display_name>
+    <option_android_display_name>Room Loop</option_android_display_name>
     <option_android_facebook_app_display_name></option_android_facebook_app_display_name>
     <option_android_facebook_appid></option_android_facebook_appid>
     <option_android_facebook_enable>0</option_android_facebook_enable>
@@ -203,14 +203,14 @@
     <option_androidtv_use_test_ads>false</option_androidtv_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
     <option_audioGroupCount>1</option_audioGroupCount>
-    <option_author>Plab &amp; Nid</option_author>
+    <option_author>Nid &amp; Plab &amp; TBox</option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>Frozen Mage</option_display_name>
+    <option_display_name>Room Loop</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_ecma>0</option_ecma>
     <option_facebook_app_display_name></option_facebook_app_display_name>
@@ -318,7 +318,7 @@
     <option_ios_texture_page>1024</option_ios_texture_page>
     <option_ios_use_test_ads>false</option_ios_use_test_ads>
     <option_lastchanged></option_lastchanged>
-    <option_linux_display_name>Frozen Mage</option_linux_display_name>
+    <option_linux_display_name>Room Loop</option_linux_display_name>
     <option_linux_enable_steam>0</option_linux_enable_steam>
     <option_linux_fullscreen>0</option_linux_fullscreen>
     <option_linux_homepage></option_linux_homepage>
@@ -347,7 +347,7 @@
     <option_mac_build_version>0</option_mac_build_version>
     <option_mac_copyright_info>(c)2016 Pierre Labatut, Marc Vercelin</option_mac_copyright_info>
     <option_mac_create_app_store>-1</option_mac_create_app_store>
-    <option_mac_display_name>Frozen Mage</option_mac_display_name>
+    <option_mac_display_name>Room Loop</option_mac_display_name>
     <option_mac_enable_retina>false</option_mac_enable_retina>
     <option_mac_enable_steam>0</option_mac_enable_steam>
     <option_mac_fullscreen>0</option_mac_fullscreen>
@@ -469,11 +469,11 @@
     <option_variableerrors>False</option_variableerrors>
     <option_version>100</option_version>
     <option_version_build>0</option_version_build>
-    <option_version_company>Plab &amp; Nid</option_version_company>
+    <option_version_company>Nid &amp; Plab &amp; TBox</option_version_company>
     <option_version_copyright></option_version_copyright>
     <option_version_description>Platformer made for fun in 5 weeks by two dudes.</option_version_description>
     <option_version_major>1</option_version_major>
-    <option_version_minor>5</option_version_minor>
+    <option_version_minor>0</option_version_minor>
     <option_version_product>Frozen Mage</option_version_product>
     <option_version_release>0</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
@@ -485,7 +485,7 @@
     <option_win8_analytics_id></option_win8_analytics_id>
     <option_win8_build_version>0</option_win8_build_version>
     <option_win8_certificate_location>Windows8_TemporaryKey.pfx</option_win8_certificate_location>
-    <option_win8_display_name>Frozen Mage</option_win8_display_name>
+    <option_win8_display_name>Room Loop</option_win8_display_name>
     <option_win8_internet_capable>0</option_win8_internet_capable>
     <option_win8_interpolate>-1</option_win8_interpolate>
     <option_win8_landscape_allowed>-1</option_win8_landscape_allowed>
@@ -545,14 +545,14 @@
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_alternate_sync_method>False</option_windows_alternate_sync_method>
     <option_windows_build_version>0</option_windows_build_version>
-    <option_windows_company_info>Plab &amp; Nid</option_windows_company_info>
+    <option_windows_company_info>Nid &amp; Plab &amp; TBox</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
     <option_windows_description_info>Platformer made for fun in 5 weeks by two dudes.</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Debug\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Debug\windows\License.txt</option_windows_license>
-    <option_windows_mainor_version>5</option_windows_mainor_version>
+    <option_windows_mainor_version>0</option_windows_mainor_version>
     <option_windows_major_version>1</option_windows_major_version>
     <option_windows_nsis_file>Configs\Debug\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info>Frozen Mage</option_windows_product_info>
@@ -654,8 +654,8 @@
   </Options>
   <ConfigConstants>
     <constants number="2">
+      <constant name="START_ROOM">rm_lvl_00</constant>
       <constant name="DEBUG_CONFIG">1</constant>
-      <constant name="START_ROOM">rm_lvl_aaa</constant>
     </constants>
   </ConfigConstants>
 </Config>

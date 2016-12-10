@@ -12,16 +12,8 @@ object_set_visible(object, false);
 var xx = 0;
 
 // Select the right tile set accroding to the room.
-var bg1 = bg_auto_tile;
-var bg2 = bg_auto_tile2;
-if(string_pos("_cave_", room_get_name(room))) {
-  var bg1 = bg_auto_cave_tile;
-  var bg2 = bg_auto_cave_tile2;
-}
-if(string_pos("_ice_", room_get_name(room))) {
-  var bg1 = bg_auto_ice_tile;
-  var bg2 = bg_auto_ice_tile2;
-}
+var bg1 = bg_auto_cave_tile;
+var bg2 = bg_auto_cave_tile2;
 
 for(var xx = 0; xx < room_width ; xx += tile_size) {
   for(var yy = 0; yy < room_height ; yy += tile_size) {
