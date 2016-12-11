@@ -162,6 +162,10 @@ a.button span {
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
+#play-online span {
+  background: transparent url(../images/play.png) 12px 50% no-repeat;
+}
+
 #download-tar-gz span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
 }
