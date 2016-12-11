@@ -31,22 +31,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_mage">
       <action>
         <libid>1</libid>
@@ -64,8 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 10;
-with(other) { instance_destroy() }
+            <string>with(obj_mage) { instance_destroy() }
+with(obj_spawn) { state = spawn_state.do_rewind }
 </string>
           </argument>
         </arguments>

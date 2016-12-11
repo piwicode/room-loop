@@ -25,18 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>// - Record - replay
+// List containing the players movment record.
+// (x, y, x_scale, sprite_index, image_index)
+recording = ds_list_create();
+record_size = 5
+// How often do we capture a frame.
+frame_sampling = 3
+// Count all frames.
+frame_number = 0;
+// Maximum number of rames of the record.
+// 10 minutes  at 7.5 frames per seconds
+record_max_size = (room_speed * 60 * 10) * record_size / frame_sampling;
+
+replay_cursor = 0;
+replay_max_duration = 3 * room_speed;
+rewind_speed = 1.
+
 // Time before recreating the character.
 respawn_delay = room_speed * .5;
 
-record = ds_list_create();
-
 // State holding the current of this object.
-state = spawn_state.idle;
+state = spawn_state.record;
 
 enum spawn_state {
- idle,
+
+ record,
  do_respawn, 
+ do_rewind, 
+ rewind,
 }
 </string>
           </argument>
@@ -60,23 +77,61 @@ enum spawn_state {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-switch(state) {
-case spawn_state.idle:
-break;
+            <string>// Records movement of the main character.
 
+switch(state) {
 case spawn_state.do_respawn:
   // Play respawn sound.
   audio_play_sound(snd_respawn, 20/*priority*/, false);
-  state = spawn_state.idle;
-  with(obj_mage) { 
-    scr_emit_magic_burst(4, 4);
-  }
+  // Respawn the main character.
   with(instance_create(x, y, obj_mage)) {
     view_object[0] = id;
     scr_emit_magic_burst(4, 4);
+  }  
+  // Erase current recording.
+  ds_list_clear(recording)
+  state = spawn_state.record; 
+  
+  // Fall through.
+case spawn_state.record:
+  frame_number++;
+  if ( (frame_number % frame_sampling == 0) &amp;&amp; ds_list_size(recording) &lt; record_max_size){
+    with(obj_mage) {
+      ds_list_add(other.recording, x, y, image_xscale, sprite_index, image_index);
+      break;
+    }
   }
 break;
+
+case spawn_state.do_rewind:
+  // Play rewind sound.
+  audio_play_sound(snd_respawn, 20/*priority*/, false);
+  replay_cursor = ds_list_size(recording) / record_size;
+  rewind_speed = max(1., replay_cursor / replay_max_duration);
+  rewind_object_id = instance_create(0, 0, obj_rewind);
+  ghost_object_id = instance_create(0, 0, obj_ghost);
+  ghost_object_id.image_speed = 0;
+  state = spawn_state.rewind;
+  show_debug_message("rewind_speed " + string(rewind_speed))
+  
+  // Fall through.
+case spawn_state.rewind:  
+  // Go back by at least one frame.
+  replay_cursor -= rewind_speed;
+  
+  if(replay_cursor &gt; 0) {
+    var offset = floor(replay_cursor) * record_size;
+    ghost_object_id.x = recording[|offset++];
+    ghost_object_id.y = recording[|offset++];
+    ghost_object_id.image_xscale = recording[|offset++];
+    ghost_object_id.sprite_index = recording[|offset++];
+    ghost_object_id.image_index = recording[|offset++];
+  } else {
+    show_debug_message("replay done")
+    // Replay is done, go to the next room.
+    instance_destroy();
+    room_goto_next()
+  }
 }
 
 </string>

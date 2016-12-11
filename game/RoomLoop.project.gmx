@@ -110,6 +110,7 @@
     <objects name="effect">
       <object>objects\obj_dot</object>
       <object>objects\obj_fade_out_and_restart</object>
+      <object>objects\obj_ghost</object>
     </objects>
     <objects name="dialog">
       <object>objects\obj_key_arrows</object>
