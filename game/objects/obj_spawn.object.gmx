@@ -89,7 +89,7 @@ view_enabled = true;
 switch(state) {
 case spawn_state.do_respawn:
   // Play respawn sound.
-  audio_play_sound(snd_respawn, 20/*priority*/, false);
+  audio_play_sound(snd_respawn, 60/*priority*/, false);
   // Respawn the main character.
   with(instance_create(x, y, obj_mage)) {
     view_object[0] = id;

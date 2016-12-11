@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>priority = 1000
 current_music = mus_01
-snd_idx = -1;
-old_snd = -1;
+snd_idx = noone;
+old_snd = noone;
 fade_duration = 100;
+
 </string>
           </argument>
         </arguments>
@@ -52,10 +53,10 @@ fade_duration = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( old_snd != -1 ) {
+            <string>if( old_snd != noone ) {
   audio_stop_sound(old_snd)
 }
-old_snd = -1
+old_snd = noone
 </string>
           </argument>
         </arguments>
@@ -95,15 +96,17 @@ if(room == room_the_end) new_music = mus_01
 if(new_music == -1) exit;
 
 var new_snd_idx = audio_play_sound(new_music, priority, true)
-audio_sound_gain(new_snd_idx, 0, 0); // Set gain to 0 now.
-audio_sound_gain(new_snd_idx, 1., fade_duration); // Set gain to 100% in 20 ms
-
-if(snd_idx != -1) {
+if(HTML == 0) {
+  audio_sound_gain(new_snd_idx, 0., 0.); // Set gain to 0 now.
+  audio_sound_gain(new_snd_idx, 1., fade_duration); // Set gain to 100% in 20 ms
+}
+set_sound = 1
+if(snd_idx != noone) {
   audio_sound_gain(snd_idx, 0., fade_duration); // Set gain to 0% in 20 ms
   var position = audio_sound_get_track_position(snd_idx)
   audio_sound_set_track_position(new_snd_idx, position)
 
-  if( old_snd != -1 ) {
+  if( old_snd != noone) {
     audio_stop_sound(old_snd)
   }
   old_snd = snd_idx

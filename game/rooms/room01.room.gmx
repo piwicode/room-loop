@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_mage" x="112" y="752" name="inst_3720D4FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_unit_test" x="0" y="-48" name="inst_DE378D40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="-16" y="-16" name="inst_CE686C42" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="16" y="-16" name="inst_9594EE35" locked="0" code="" scaleX="23" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="752" y="-16" name="inst_D70E3EFD" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
