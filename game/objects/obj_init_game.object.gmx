@@ -70,7 +70,7 @@ if (keyboard_check_pressed(vk_f5) || keyboard_check_pressed(ord("R"))) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="77">
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -87,8 +87,10 @@ if (keyboard_check_pressed(vk_f5) || keyboard_check_pressed(ord("R"))) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// This code is innqctive becqsue this instance is not visible.
-// draw_surface_ext(application_surface, global.Xoffset, global.Yoffset, 1, 1, 0, c_white, 1);
+            <string>// background_showcolour
+background_showcolour = 0
+instance_create(0, 0, obj_background)
+
 </string>
           </argument>
         </arguments>

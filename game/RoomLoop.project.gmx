@@ -31,6 +31,8 @@
       <sprite>sprites\spr_pad</sprite>
       <sprite>sprites\sp_from_paris</sprite>
       <sprite>sprites\sp_sign</sprite>
+      <sprite>sprites\sp_rewind</sprite>
+      <sprite>sprites\sp_background</sprite>
     </sprites>
     <sprites name="blob">
       <sprite>sprites\sp_blob_walk</sprite>
@@ -90,8 +92,6 @@
       <object>objects\obj_text</object>
       <object>objects\obj_go_next_level</object>
       <object>objects\obj_spawn</object>
-      <object>objects\obj_spawn_restart</object>
-      <object>objects\obj_checkpoint</object>
     </objects>
     <objects name="room_control">
       <object>objects\obj_init_game</object>
@@ -120,6 +120,8 @@
       <object>objects\obj_par_credit</object>
       <object>objects\obj_sign</object>
       <object>objects\obj_from_paris</object>
+      <object>objects\obj_rewind</object>
+      <object>objects\obj_background</object>
     </objects>
     <object>objects\obj_run_statistics</object>
     <object>objects\obj_google_analytics</object>
