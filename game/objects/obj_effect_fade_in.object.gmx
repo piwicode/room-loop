@@ -27,39 +27,13 @@
             <kind>1</kind>
             <string>// Parameters
 invisible_duration_secs = 1
-fade_in_duration_secs = 2
+fade_duration_secs = 2
+visible_duration_secs = 4
 
 // States
-// In the beginning it is invisible
-image_alpha = 0;
-// After a few frames it starts to fade in.
-alpha_increment = 0;
-image_speed = 1.5 / room_speed;
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alpha_increment = 1. / room_speed / fade_in_duration_secs;
+increment = 0.
+image_speed = 2 / room_speed
+image_alpha = 0.
 </string>
           </argument>
         </arguments>
@@ -82,31 +56,27 @@ image_speed = 1.5 / room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = min(image_alpha + alpha_increment, 1.);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alarm[0] = room_speed * invisible_duration_secs;
+            <string>increment += 1.
+var time = increment / room_speed
+if ( time &lt; invisible_duration_secs ) {
+  exit;
+}
+time -= invisible_duration_secs;
+if ( time &lt; fade_duration_secs ) {  // Fade in.
+   image_alpha = time / fade_duration_secs;
+   exit;
+}
+time -= fade_duration_secs;
+if ( time &lt; visible_duration_secs ) {  // Visible.
+  image_alpha = 1.;
+  exit;
+}
+time -= visible_duration_secs;
+if ( time &lt; fade_duration_secs ) {  // Fade in.
+   image_alpha = 1. - time / fade_duration_secs;
+   exit;
+} 
+instance_destroy();
 
 </string>
           </argument>

@@ -6,43 +6,19 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_pick_staff</sound>
-    <sound>sound\snd_falling</sound>
-    <sound>sound\snd_shock01</sound>
-    <sound>sound\snd_shock02</sound>
-    <sound>sound\snd_shock03</sound>
     <sound>sound\snd_respawn</sound>
-    <sound>sound\snd_door_sliding</sound>
-    <sound>sound\snd_door_stop</sound>
-    <sound>sound\snd_plate_down</sound>
-    <sound>sound\snd_plate_up</sound>
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_jump</sound>
-    <sound>sound\snd_pick_star</sound>
     <sound>sound\snd_foot</sound>
-    <sound>sound\snd_spell</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_exit_door</sprite>
-    <sprite>sprites\sp_plate_open</sprite>
-    <sprite>sprites\sp_plate_close</sprite>
-    <sprite>sprites\sp_fence_close</sprite>
-    <sprite>sprites\sp_fence_open</sprite>
-    <sprite>sprites\sp_stone_16</sprite>
-    <sprite>sprites\sp_stone_32</sprite>
-    <sprite>sprites\sp_door_64</sprite>
     <sprites name="control">
       <sprite>sprites\sp_debug</sprite>
-      <sprite>sprites\sp_text</sprite>
-      <sprite>sprites\sp_label_a</sprite>
-      <sprite>sprites\sp_go_next_level</sprite>
-      <sprite>sprites\sp_obj_talk</sprite>
       <sprite>sprites\sp_block_16x16</sprite>
       <sprite>sprites\sp_block_32x32</sprite>
       <sprite>sprites\sp_block_16x16_notile</sprite>
       <sprite>sprites\sp_dangerous_16x16</sprite>
-      <sprite>sprites\sp_trigger</sprite>
-      <sprite>sprites\sp_trigger_effect</sprite>
       <sprite>sprites\sp_part_doom</sprite>
       <sprite>sprites\spr_spawn</sprite>
       <sprite>sprites\spr_spawn_restart</sprite>
@@ -65,8 +41,6 @@
     <sprite>sprites\sp_spikes</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_auto_cave_tile</background>
-    <background>background\bg_auto_cave_tile2</background>
     <background>background\bg_auto_tile</background>
   </backgrounds>
   <paths name="paths"/>
@@ -101,20 +75,7 @@
     <object>objects\obj_collision_16x16_notile</object>
     <object>objects\obj_spikes</object>
     <object>objects\obj_exit_door</object>
-    <object>objects\obj_plate_open</object>
-    <object>objects\obj_plate_close</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_water</object>
-    <objects name="entity">
-      <object>objects\obj_mage</object>
-      <object>objects\obj_orc</object>
-      <object>objects\obj_troll</object>
-      <object>objects\obj_icecube</object>
-      <object>objects\obj_stone_16</object>
-      <object>objects\obj_stone_32</object>
-      <object>objects\obj_still_stone_16</object>
-      <object>objects\obj_still_stone_32</object>
-    </objects>
+    <object>objects\obj_mage</object>
     <objects name="parent">
       <object>objects\obj_collidable</object>
       <object>objects\obj_entity</object>
@@ -128,15 +89,9 @@
       <object>objects\obj_dangerous</object>
       <object>objects\obj_text</object>
       <object>objects\obj_go_next_level</object>
-      <object>objects\obj_talk</object>
-      <object>objects\obj_trigger_zone</object>
-      <object>objects\obj_trigger_zone_fall</object>
-      <object>objects\obj_trigger_effect_fall</object>
       <object>objects\obj_spawn</object>
       <object>objects\obj_spawn_restart</object>
-      <object>objects\obj_spawn_scroll_room</object>
       <object>objects\obj_checkpoint</object>
-      <object>objects\obj_block_spawn</object>
     </objects>
     <objects name="room_control">
       <object>objects\obj_init_game</object>
@@ -153,14 +108,8 @@
       <object>objects\obj_part_global_system</object>
     </objects>
     <objects name="effect">
-      <object>objects\obj_spark</object>
-      <object>objects\obj_fireball</object>
-      <object>objects\obj_explode</object>
-      <object>objects\obj_frozen_content</object>
       <object>objects\obj_dot</object>
-      <object>objects\obj_gui_dialog</object>
       <object>objects\obj_fade_out_and_restart</object>
-      <object>objects\obj_test_collider</object>
     </objects>
     <objects name="dialog">
       <object>objects\obj_key_arrows</object>
@@ -172,7 +121,6 @@
       <object>objects\obj_sign</object>
       <object>objects\obj_from_paris</object>
     </objects>
-    <object>objects\obj_star</object>
     <object>objects\obj_run_statistics</object>
     <object>objects\obj_google_analytics</object>
     <object>objects\obj_exit_game</object>
