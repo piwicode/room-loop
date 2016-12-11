@@ -10,6 +10,13 @@
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_jump</sound>
     <sound>sound\snd_foot</sound>
+    <sound>sound\mus_01</sound>
+    <sound>sound\mus_02</sound>
+    <sound>sound\mus_03</sound>
+    <sound>sound\mus_04</sound>
+    <sound>sound\mus_05</sound>
+    <sound>sound\mus_06</sound>
+    <sound>sound\mus_07</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_exit_door</sprite>
@@ -90,6 +97,7 @@
       <object>objects\obj_text</object>
       <object>objects\obj_go_next_level</object>
       <object>objects\obj_spawn</object>
+      <object>objects\obj_music_maker</object>
     </objects>
     <objects name="room_control">
       <object>objects\obj_init_game</object>
