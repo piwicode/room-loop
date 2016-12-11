@@ -98,7 +98,7 @@ input_override_script = false; // Set to true in conjunction
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//audio_stop_sound(walking_sound);
+            <string>audio_stop_sound(walking_sound);
 </string>
           </argument>
         </arguments>
@@ -185,8 +185,7 @@ if (do_die) {
   with(obj_spawn) {
     state = spawn_state.do_respawn;
     break;
-  }
-  //audio_stop_sound(walking_sound);
+  }  
   instance_destroy();
   exit;
 }
