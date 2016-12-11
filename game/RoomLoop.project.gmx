@@ -53,14 +53,6 @@
       <sprite>sprites\spr_key_ctrl</sprite>
       <sprite>sprites\spr_key_arrows</sprite>
       <sprite>sprites\spr_pad</sprite>
-      <sprite>sprites\spr_title_presents</sprite>
-      <sprite>sprites\spr_title_authors</sprite>
-      <sprite>sprites\spr_credit_code</sprite>
-      <sprite>sprites\spr_credit_sound</sprite>
-      <sprite>sprites\spr_design</sprite>
-      <sprite>sprites\spr_graphics</sprite>
-      <sprite>sprites\spr_credit_thanks</sprite>
-      <sprite>sprites\sp_feedback</sprite>
       <sprite>sprites\sp_from_paris</sprite>
       <sprite>sprites\sp_sign</sprite>
     </sprites>
@@ -103,7 +95,6 @@
     <script>scripts\scr_freeze.gml</script>
     <script>scripts\scr_emit_magic_burst.gml</script>
   </scripts>
-  <fonts name="fonts"/>
   <objects name="objects">
     <object>objects\obj_collision_32x32</object>
     <object>objects\obj_collision_16x16</object>
