@@ -21,8 +21,6 @@
       <sprite>sprites\sp_dangerous_16x16</sprite>
       <sprite>sprites\sp_part_doom</sprite>
       <sprite>sprites\spr_spawn</sprite>
-      <sprite>sprites\spr_spawn_restart</sprite>
-      <sprite>sprites\sp_respawn</sprite>
     </sprites>
     <sprites name="dialog">
       <sprite>sprites\spr_key_space</sprite>
@@ -111,6 +109,7 @@
       <object>objects\obj_dot</object>
       <object>objects\obj_fade_out_and_restart</object>
       <object>objects\obj_ghost</object>
+      <object>objects\obj_burst_zone</object>
     </objects>
     <objects name="dialog">
       <object>objects\obj_key_arrows</object>
