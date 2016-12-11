@@ -17,6 +17,7 @@
     <sound>sound\mus_05</sound>
     <sound>sound\mus_06</sound>
     <sound>sound\mus_07</sound>
+    <sound>sound\snd_rewind</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_exit_door</sprite>

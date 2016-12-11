@@ -39,7 +39,7 @@ frame_number = 0;
 record_max_size = (room_speed * 60 * 10) * record_size / frame_sampling;
 
 replay_cursor = 0;
-replay_max_duration = 3 * room_speed;
+replay_max_duration = 1.5 * room_speed;
 rewind_speed = 1.
 
 // Time before recreating the character.
@@ -115,7 +115,7 @@ break;
 
 case spawn_state.do_rewind:
   // Play rewind sound.
-  audio_play_sound(snd_respawn, 20/*priority*/, false);
+  rewind_idx = audio_play_sound(snd_rewind, 20/*priority*/, false);
   replay_cursor = ds_list_size(recording) / record_size;
   rewind_speed = max(1., replay_cursor / replay_max_duration);
   rewind_object_id = instance_create(0, 0, obj_rewind);
@@ -137,6 +137,7 @@ case spawn_state.rewind:
     ghost_object_id.sprite_index = recording[|offset++];
     ghost_object_id.image_index = recording[|offset++];
   } else {
+    audio_sound_gain(rewind_idx, 0, 200);  //Fadeout
     show_debug_message("replay done")
     var next_name = room_get_name(room_next(room))
     show_debug_message("next room : " + next_name)
