@@ -26,9 +26,92 @@
           <argument>
             <kind>1</kind>
             <string>priority = 1000
-snd_idx = audio_play_sound(mus_01, priority, true)
-audio_sound_gain(snd_idx, 0, 0); // Set gain to 0 now.
-audio_sound_gain(snd_idx, 1., 100); // Set gain to 100% in 2 secs.
+current_music = mus_01
+snd_idx = -1;
+old_snd = -1;
+fade_duration = 100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if( old_snd != -1 ) {
+  audio_stop_sound(old_snd)
+}
+old_snd = -1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var new_music = -1
+
+if(room == room01) new_music = mus_01
+if(room == room02) new_music = mus_01
+if(room == room03) new_music = mus_02
+if(room == room04) new_music = mus_02
+if(room == room05) new_music = mus_03
+if(room == room06) new_music = mus_04
+if(room == room07) new_music = mus_04
+if(room == room08) new_music = mus_05
+if(room == room09_ccw) new_music = mus_06
+if(room == room10_ccw) new_music = mus_07
+if(room == room11) new_music = mus_07
+if(room == room_the_end) new_music = mus_01
+if(new_music == -1) exit;
+
+var new_snd_idx = audio_play_sound(new_music, priority, true)
+audio_sound_gain(new_snd_idx, 0, 0); // Set gain to 0 now.
+audio_sound_gain(new_snd_idx, 1., fade_duration); // Set gain to 100% in 20 ms
+
+if(snd_idx != -1) {
+  audio_sound_gain(snd_idx, 0., fade_duration); // Set gain to 0% in 20 ms
+  var position = audio_sound_get_track_position(snd_idx)
+  audio_sound_set_track_position(new_snd_idx, position)
+
+  if( old_snd != -1 ) {
+    audio_stop_sound(old_snd)
+  }
+  old_snd = snd_idx
+  alert[0] = room_speed / 4; // Setup cleanup in 250 ms.
+}
+
+snd_idx = new_snd_idx
+
 
 </string>
           </argument>
