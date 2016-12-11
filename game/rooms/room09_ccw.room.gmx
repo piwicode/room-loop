@@ -91,9 +91,9 @@
     <instance objName="obj_collision_32x32" x="496" y="752" name="inst_0BD43F7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="528" y="752" name="inst_1CC8B8B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="560" y="752" name="inst_ABF3A918" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="464" name="inst_82B52A1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="432" name="inst_D12495CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="400" name="inst_2E9FD27B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="464" name="inst_82B52A1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="432" name="inst_D12495CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="400" name="inst_2E9FD27B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="528" y="400" name="inst_94E69329" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="496" y="400" name="inst_8E4E1B19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="464" y="400" name="inst_F2AAF555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -115,10 +115,10 @@
     <instance objName="obj_collision_32x32" x="272" y="400" name="inst_F88D99BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="240" y="400" name="inst_6CFF440D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="208" y="400" name="inst_E2D9BACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="368" name="inst_D84BF4B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="336" name="inst_F5634E21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="368" name="inst_D84BF4B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="336" name="inst_F5634E21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="176" y="400" name="inst_6B1592A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_32x32" x="560" y="304" name="inst_395E4E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="592" y="304" name="inst_395E4E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="16" y="192" name="inst_22D1100A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="48" y="192" name="inst_D17A1B8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="80" y="192" name="inst_2FD50F6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -134,9 +134,12 @@
     <instance objName="obj_collision_32x32" x="400" y="608" name="inst_1A4A1C51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="432" y="608" name="inst_75376DD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="464" y="608" name="inst_25F2197A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spikes" x="528" y="400" name="inst_EA8D6C2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_spikes" x="560" y="400" name="inst_EA8D6C2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_spikes" x="208" y="384" name="inst_6A7FB2EC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spikes" x="400" y="256" name="inst_3C009F40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-180"/>
+    <instance objName="obj_spikes" x="432" y="256" name="inst_3C009F40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-180"/>
+    <instance objName="obj_background" x="-432" y="384" name="inst_DD2BB287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_collision_32x32" x="560" y="400" name="inst_32C8D6D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="400" y="192" name="inst_44C31B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

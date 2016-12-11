@@ -113,6 +113,8 @@
     <instance objName="obj_spikes" x="368" y="560" name="inst_4034D5F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spikes" x="512" y="432" name="inst_B2A6C5A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_burst_zone" x="544" y="16" name="inst_2C213F7F" locked="0" code="" scaleX="2" scaleY="26" colour="4294967295" rotation="0"/>
+    <instance objName="obj_background" x="-432" y="384" name="inst_574F6F6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_32x32" x="336" y="176" name="inst_22DF0605" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

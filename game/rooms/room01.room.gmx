@@ -83,6 +83,7 @@
     <instance objName="obj_key_arrows" x="592" y="272" name="inst_FE9B4F52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key_space" x="400" y="228" name="inst_06FD696D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pad" x="176" y="240" name="inst_3FB361D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_background" x="-432" y="384" name="inst_37A2BD7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

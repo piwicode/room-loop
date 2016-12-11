@@ -72,6 +72,7 @@
     <instance objName="obj_collision_32x32" x="528" y="752" name="inst_BB537F9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_32x32" x="208" y="752" name="inst_D8E72D1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_burst_zone" x="240" y="752" name="inst_042DAE4C" locked="0" code="" scaleX="18" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_background" x="-432" y="384" name="inst_2DB91C97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
