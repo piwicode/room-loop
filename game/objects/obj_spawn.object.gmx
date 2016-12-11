@@ -102,9 +102,12 @@ case spawn_state.do_respawn:
   // Fall through.
 case spawn_state.record:
   frame_number++;
-  if ( (frame_number % frame_sampling == 0) &amp;&amp; ds_list_size(recording) &lt; record_max_size){
+  if ((frame_number % frame_sampling == 0) &amp;&amp; ds_list_size(recording) &lt; record_max_size){
     with(obj_mage) {
-      ds_list_add(other.recording, x, y, image_xscale, sprite_index, image_index);
+      // Do not record the immobile player at start position.
+      if(x != other.x || y != other.y) {
+        ds_list_add(other.recording, x, y, image_xscale, sprite_index, image_index);
+      }
       break;
     }
   }
@@ -146,7 +149,7 @@ case spawn_state.rewind:
   break;
 
 case spawn_state.rotate_ccw:
-  view_angle[0] += 1.5
+  view_angle[0] += 2
   if(view_angle[0] &gt;= 90) {
     state = spawn_state.goto_next;     
   }
