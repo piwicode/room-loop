@@ -455,13 +455,13 @@
     <option_tvos_build_version>0</option_tvos_build_version>
     <option_tvos_certificate></option_tvos_certificate>
     <option_tvos_display_name>MageGlace</option_tvos_display_name>
-    <option_tvos_icon_1280>Configs\Default\tvos\icons\icon1280.png</option_tvos_icon_1280>
-    <option_tvos_icon_400>Configs\Default\tvos\icons\icon400.png</option_tvos_icon_400>
+    <option_tvos_icon_1280>Configs\Debug\tvos\icons\icon1280.png</option_tvos_icon_1280>
+    <option_tvos_icon_400>Configs\Debug\tvos\icons\icon400.png</option_tvos_icon_400>
     <option_tvos_interpolate>true</option_tvos_interpolate>
     <option_tvos_major_version>1</option_tvos_major_version>
     <option_tvos_minor_version>0</option_tvos_minor_version>
     <option_tvos_scale>-1</option_tvos_scale>
-    <option_tvos_splash_png>Configs\Default\tvos\splash.png</option_tvos_splash_png>
+    <option_tvos_splash_png>Configs\Debug\tvos\splash.png</option_tvos_splash_png>
     <option_tvos_splash_time>0</option_tvos_splash_time>
     <option_tvos_texture_page>2048</option_tvos_texture_page>
     <option_use_fast_collision>false</option_use_fast_collision>
