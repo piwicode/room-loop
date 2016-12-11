@@ -406,7 +406,6 @@ if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_par
 // If none exist create one.
 instance_create(x, y, obj_spawn)
 
-
 </string>
           </argument>
         </arguments>

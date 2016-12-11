@@ -205,7 +205,7 @@
     <instance objName="obj_sign" x="240" y="512" name="inst_D75F7E77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_from_paris" x="288" y="464" name="inst_7CBF3BDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_exit_game" x="608" y="704" name="inst_93F6A9F6" locked="0" code="" scaleX="1.62903225421906" scaleY="1.62903225421906" colour="4294967295" rotation="0"/>
-    <instance objName="obj_run_statistics" x="368" y="400" name="inst_7A1F2817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_run_statistics" x="375" y="400" name="inst_7A1F2817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
