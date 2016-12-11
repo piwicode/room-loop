@@ -57,7 +57,6 @@
     <script>scripts\scr_move_init.gml</script>
     <script>scripts\scr_push.gml</script>
     <script>scripts\scr_move.gml</script>
-    <script>scripts\scr_room_init.gml</script>
     <scripts name="functions">
       <script>scripts\Approach.gml</script>
       <script>scripts\IIF.gml</script>

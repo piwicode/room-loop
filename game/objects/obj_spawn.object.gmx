@@ -92,7 +92,6 @@ case spawn_state.do_respawn:
   audio_play_sound(snd_respawn, 60/*priority*/, false);
   // Respawn the main character.
   with(instance_create(x, y, obj_mage)) {
-    view_object[0] = id;
     scr_emit_magic_burst(4, 4);
   }  
   // Erase current recording.
